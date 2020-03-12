@@ -13,6 +13,8 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Keywords
 {
@@ -20,7 +22,7 @@ public class Keywords
 	public static void main(String[] args)
 	{
 
-		WebDriver driver=new driver;
+		WebDriver driver;
 		
 		String Driver_path="Drivers\\";
 		WebDriverWait wait;
