@@ -4,7 +4,8 @@ import org.openqa.selenium.WebDriver;
 
 import Webdriver_Locaters.ChromeDriver;
 
-public class Launch_Browzer_launch {
+public class Launch_Browzer_launch 
+{
 
 	public static void main(String[] args) 
 	{
@@ -27,11 +28,11 @@ public class Launch_Browzer_launch {
 				 */
 				
 				//Setting runtime environment variable for chromedriver.exe file
-				System.setProperty("webdriver.chrome.driver", "browser_drivers\\\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "browser_drivers\\chromedriver.exe");
 				//launching chrome browser and store chrome references into varaible
 				ChromeDriver chrome=new ChromeDriver();
 				//Using reference of chrome browser loading webpage.
-				chrome.get("https://facebook.com");
+				chrome.get();
 				/*
 				 * Exception:-->
 				 * 			IllegalstateException
