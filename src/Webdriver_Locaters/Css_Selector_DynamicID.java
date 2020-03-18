@@ -1,5 +1,7 @@
 package Webdriver_Locaters;
 
+import org.openqa.selenium.By.ById;
+
 public class Css_Selector_DynamicID 
 
 {
@@ -17,17 +19,17 @@ public class Css_Selector_DynamicID
 			    
 			    
 			    //Click Create account link
-			   driver.findElement(By.cssSelector
+			   driver.findElement(ById
 					   ("a[href='//register.rediff.com/register/register.php?FormName=user_details']")).click();
 			    
 			    
 			   //Identify firstname editbox
-			   driver.findElement(By.cssSelector("input[name*='name']")).clear();
-			   driver.findElement(By.cssSelector("input[name*='name']")).sendKeys("Arjn");
+			   driver.findElement(By.xpath("input[name*='name']")).clear();
+			   driver.findElement(By.xpath("input[name*='name']")).sendKeys("Arjn");
 			   
 			   //identify surname editbox
-			   driver.findElement(By.cssSelector("input[name*='login']")).clear();
-			   driver.findElement(By.cssSelector("input[name*='login']")).sendKeys("vijay");
+			   driver.findElement(By.xpath("input[name*='login']")).clear();
+			   driver.findElement(By.xpath("input[name*='login']")).sendKeys("vijay");
 			   
 			   
 			}
